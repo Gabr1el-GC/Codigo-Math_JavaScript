@@ -8,5 +8,5 @@ try {
     console.error("Ocorreu um erro:", erro);
   }
   
-  console.log("Este código continua sendo executado mesmo sem o erro.");
+  console.log("Este código continua sendo executado com o erro.");
   
