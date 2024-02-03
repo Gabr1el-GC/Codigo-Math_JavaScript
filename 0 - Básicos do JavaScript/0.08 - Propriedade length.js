@@ -1,3 +1,3 @@
-const palavra = "ZagalloEterno";
+const palavra = "BrasilCampeão";
 
-console.log("'Zagallo Eterno' tem",palavra.length,"letras!");
+console.log("'Brasil Campeão' tem",palavra.length,"letras!");
