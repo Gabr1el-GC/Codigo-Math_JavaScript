@@ -1,4 +1,4 @@
-//Função Afim: f(x) = a*x + b. Obs.: O valores que x deve assumir devem ser inteiros.
+//Função Afim: f(x) = a*x + b. Obs.: O valores que x assume devem ser inteiros.
 let cA = 3;
 let cB = 5;
 
