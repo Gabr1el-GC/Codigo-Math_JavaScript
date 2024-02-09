@@ -7,7 +7,7 @@ function exponencialE(x) {
     return Math.exp(x); //Potência de base e.
 }
 
-for (let x = xMinimo; x <= xMaximo; x += passo) { //'+=' adicona o valor do 'passo' ao valor do 'x', e depois atribui or resultado ao 'x'.
+for (let x = xMinimo; x <= xMaximo; x += passo) {
     let resultado = exponencialE(x);
     console.log(`Para x = ${x}, o valor de e^x será: ${resultado}`);
 }
