@@ -6,10 +6,21 @@ const matrizA = [
   
 const matrizB = [
     [2, 4],
-    [6, 8]
+    [6, 8],
+    [10, 11]
 ];
+
+function saoDeMesmaOrdem(m1, m2) {  // Verifica se o nº de linhas e colunas é o mesmo para as duas matrizes.
+    return m1.length === m2.length && m1[0].length === m2[0].length;
+}
+
 // A ideia é receber duas matrizes como parâmetro e usar dois laços para percorrer cada elemento das matrizes.  
 function adicaoDeMatrizes(m1, m2) {
+    if (!saoDeMesmaOrdem(m1, m2)) {
+        console.error("As matrizes não são de mesma ordem, logo não é possível fazer a adição!");
+        return null;
+    }
+
     const resultado = [];
     
     for (let i = 0; i < m1.length; i++) { // i: Índice das linhas
@@ -26,6 +37,11 @@ function adicaoDeMatrizes(m1, m2) {
 }
 
 function subtracaoDeMatrizes(m1, m2) {
+    if (!saoDeMesmaOrdem(m1, m2)) {
+        console.error("As matrizes não são de mesma ordem, logo não é possível fazer a subtração!");
+        return null;
+    }
+
     const resultado = [];
     
     for (let i = 0; i < m1.length; i++) {
