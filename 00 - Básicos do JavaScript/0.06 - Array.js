@@ -9,6 +9,7 @@ var arrayNumeros = [7, 12, 15, 9]; // Serve para reduzir os elementos de um arra
 var somaValoresNoArray = arrayNumeros.reduce((acumulador, valorAtual) => //Soma os valores da array.
     acumulador + valorAtual, 0 //Neste caso deve-se iniciar o valor acumulado como 1.
 );
+var unirValoresEmArray = console.log(`${arrayNumeros.join('º, ')}º.`); // Une todos os elementos de um array em uma única string.
 var ordenarValoresdoArray = arrayNumeros.sort((a, b) => //Ordena os valores do array.
     a - b // Neste caso, estamos ordenando em ordem crescente.
 );
