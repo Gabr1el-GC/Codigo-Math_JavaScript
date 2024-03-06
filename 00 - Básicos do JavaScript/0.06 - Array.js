@@ -10,9 +10,11 @@ var somaValoresNoArray = arrayNumeros.reduce((acumulador, valorAtual) => //Soma 
     acumulador + valorAtual, 0 //Neste caso deve-se iniciar o valor acumulado como 1.
 );
 var unirValoresEmArray = console.log(`${arrayNumeros.join('º, ')}º.`); // Une todos os elementos de um array em uma única string.
+var quantidadeValoresArray = arrayNumeros.length; // Mostra a quantidade de elementos do array.
 var ordenarValoresdoArray = arrayNumeros.sort((a, b) => //Ordena os valores do array.
     a - b // Neste caso, estamos ordenando em ordem crescente.
 );
 
+console.log(quantidadeValoresArray);
 console.log(somaValoresNoArray);
 console.log(ordenarValoresdoArray);
