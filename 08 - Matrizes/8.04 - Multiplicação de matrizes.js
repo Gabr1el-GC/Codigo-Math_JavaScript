@@ -13,7 +13,7 @@ function multiplicacaoDeMatrizes(m1, m2) {
     const resultado = [];
   
     if (m1[0].length !== m2.length) { // Verifica se as matrizes podem ser multiplicadas.
-        console.error(`O nº de colunas de ${m1} é diferente do nº de linhas de ${m2}!`);
+        console.error(`O nº de colunas de uma matriz é diferente do nº de linhas da outra matriz!`);
         return resultado;
     }
 
@@ -21,7 +21,7 @@ function multiplicacaoDeMatrizes(m1, m2) {
         resultado[i] = [];
     }
   
-    for (let i = 0; i < m1.length; i++) { // Calculando a multiplicação das matrizes
+    for (let i = 0; i < m1.length; i++) { // Realizando a multiplicação das matrizes
         for (let j = 0; j < m2[0].length; j++) {
             let soma = 0;
             for (let k = 0; k < m2.length; k++) {

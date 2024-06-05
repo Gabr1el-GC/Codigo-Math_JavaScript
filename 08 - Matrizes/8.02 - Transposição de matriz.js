@@ -1,9 +1,10 @@
 const matrizOriginal = [ //Matriz 2x3
     [1, 3, 5],
-    [7, 9, 11]
+    [7, 9, 11],
+    [2, 1, 15],
 ];
 
-/* 'map()' serve para criar um novo array, aplicando uma função a cada elemento do array, não 
+/* O método 'map()' serve para criar um novo array, aplicando uma função a cada elemento do array, não 
 modificando o array original, mas cria um novo array com os resultados da função aplicada a cada
 elemento.
 Neste caso, usa-se 'map()' para percorrer as colunas da matriz original, e vai criando novas

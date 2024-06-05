@@ -6,8 +6,7 @@ const matrizA = [
   
 const matrizB = [
     [2, 4],
-    [6, 8],
-    [10, 11]
+    [6, 8]
 ];
 
 function saoDeMesmaOrdem(m1, m2) {  // Verifica se o nº de linhas e colunas é o mesmo para as duas matrizes.

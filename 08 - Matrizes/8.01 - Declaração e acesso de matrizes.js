@@ -3,6 +3,7 @@ const matrizExemplo = [
     [4, 5, 6],
     [7, 8, 9]
 ];
+
 /* Cada array dentro dos colchetes de'matrizExemplo' é uma linha da matriz. 
 Observe que é uma matriz 3x3. */
 console.log(matrizExemplo);
