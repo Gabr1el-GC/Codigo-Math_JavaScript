@@ -6,6 +6,6 @@ const Indefinido = undefined; //undefined
 
 const Numero = 1.41; //number
 
-const _string = "exemplo"; //String
+const exemploString = "exemplo"; //String
 
-const Objeto = Object; //Object
+const exemploObjeto = Object; //Object
