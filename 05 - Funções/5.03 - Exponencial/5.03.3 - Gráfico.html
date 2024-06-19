@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<body>
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+// Funcao exponencial: f(x) = a^x
+const a = 2;
+
+// Gerar valores
+const xValor = [];
+const yValor = [];
+for (let x = -5; x <= 5; x += 0.1) { //Intervalo [-5, 5], variacao 0.1
+  xValor.push(x);
+  yValor.push(a**x);
+}
+
+//Mostra o grafico usando o Plotly
+const dados = [{x:xValor, y:yValor, mode:"lines"}];
+const layout = {title: "y = a^x"};
+Plotly.newPlot("myPlot", dados, layout);
+</script>
+
+</body>
+</html>

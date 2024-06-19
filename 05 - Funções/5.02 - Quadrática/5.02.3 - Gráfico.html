@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<body>
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+// Funcao quadrática: f(x) = a*x^2 + b*x + c
+const a = 1;
+const b = 1;
+const c = -6;
+
+// Gerar valores
+const xValor = [];
+const yValor = [];
+for (let x = -5; x <= 5; x += 0.1) { //Intervalo [-5, 5], variacao 0.1
+  xValor.push(x);
+  yValor.push(a*(x**2) + b*x + c);
+}
+
+//Mostra o grafico usando o Plotly
+const dados = [{x:xValor, y:yValor, mode:"lines"}];
+const layout = {title: "y = a*x^2 + b*x + c"};
+Plotly.newPlot("myPlot", dados, layout);
+</script>
+
+</body>
+</html>

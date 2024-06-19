@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<body>
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+// Funcao afim: f(x) = a*x + b
+const a = 3;
+const b = 5
+
+// Gerar valores
+const xValor = [];
+const yValor = [];
+for (let x = -10; x <= 10; x += 0.1) { //Intervalo [-10, 10], variacao 0.1
+  xValor.push(x);
+  yValor.push(a*x + b);
+}
+
+//Mostra o grafico usando o Plotly
+const dados = [{x:xValor, y:yValor, mode:"lines"}];
+const layout = {title: "y = a*x + b"};
+Plotly.newPlot("myPlot", dados, layout);
+</script>
+
+</body>
+</html>
